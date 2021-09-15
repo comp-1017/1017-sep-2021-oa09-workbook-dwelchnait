@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,visualstudiocode,web
 
 ### macOS ###
+### don knows nothing about macs
 # General
 .DS_Store
 .AppleDouble
