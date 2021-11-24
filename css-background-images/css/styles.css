@@ -1,0 +1,89 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.hidden {
+	display: none;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
+*/
+
+/* by default any image is repeated across / down the display area*/
+
+.page-header {
+
+	background-image: url(../img/pinimg.png),
+					  url(../img/lotus-position.png),
+					  url(../img/lotus-flower.png),
+					  linear-gradient(to right, rgba(85,150,154,1), rgba(194, 223, 225,0.2));
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: left 0em top 0em,
+						 left 11em bottom 10em,
+						 left 14em bottom 13em;
+}
+/* Typography 
+
+Calculation of points (pt) to pixels
+
+12 pt = 16px
+
+pt * 4 / 3 = px */
+
+.blog-font{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.blog-font header h2{
+	font-size: 64px;
+	color: #0b777b;
+	font-weight: bold;
+}
+
+.blog-font p{
+	font-size: 21px;
+	color: #7f8c8c;
+}
+
+.blog-font footer span{
+	color:#378184;
+	font-size: 19px;
+}
+
+.blog-font footer strong{
+	font-weight:bold;
+	color: #094244;
+}
+
+/* layout */
+.page-header{
+	margin-bottom: 88px;
+}
+
+.blog-font{
+	margin-bottom: 70px;
+	padding: 0 60px;
+}
+
+.blog-font footer{
+	margin-top: 24px;
+}
+
+.blog-font footer span{
+	margin: 0 20px;
+}
+
+.blog-font footer img{
+	vertical-align: middle;
+}
